@@ -5,12 +5,25 @@
         <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
             <code-name-base>dreamer.card.game.library</code-name-base>
             <suite-component/>
-            <module-dependencies/>
+            <module-dependencies>
+                <dependency>
+                    <code-name-base>eclipselink</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <release-version>2</release-version>
+                        <specification-version>3</specification-version>
+                    </run-dependency>
+                </dependency>
+            </module-dependencies>
             <public-packages>
                 <package>dreamer.card.game</package>
                 <package>dreamer.card.game.model.events</package>
                 <package>dreamer.card.game.price</package>
                 <package>dreamer.card.game.storage</package>
+                <package>dreamer.card.game.storage.database.persistence</package>
+                <package>dreamer.card.game.storage.database.persistence.controller</package>
+                <package>dreamer.card.game.storage.database.persistence.controller.exceptions</package>
             </public-packages>
             <class-path-extension>
                 <runtime-relative-path>ext/extension/Card_Game_Interface.jar</runtime-relative-path>

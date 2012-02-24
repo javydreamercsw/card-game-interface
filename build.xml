@@ -24,7 +24,7 @@
     <target name="-update-keystore-info" depends="-init-netbeans, -init-hudson">
         <for list="${modules}" delimiter=":" param="cur" trim="true">
             <sequential>
-                <echo>Uptading module: @{cur}...</echo>
+                <echo>Updating module: @{cur}...</echo>
                 <mkdir dir="@{cur}/nbproject/"/>
                 <!--Place the information in the properties file-->
                 <propertyfile file="@{cur}/nbproject/project.properties">

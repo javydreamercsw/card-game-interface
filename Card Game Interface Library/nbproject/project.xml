@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://www.netbeans.org/ns/project/1">
     <type>org.netbeans.modules.apisupport.project</type>
     <configuration>
@@ -21,6 +21,7 @@
                 <package>dreamer.card.game.model.events</package>
                 <package>dreamer.card.game.price</package>
                 <package>dreamer.card.game.storage</package>
+                <package>dreamer.card.game.storage.cache</package>
                 <package>dreamer.card.game.storage.database.persistence</package>
                 <package>dreamer.card.game.storage.database.persistence.controller</package>
                 <package>dreamer.card.game.storage.database.persistence.controller.exceptions</package>

@@ -1,19 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://www.netbeans.org/ns/project/1">
     <type>org.netbeans.modules.apisupport.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
             <code-name-base>dreamer.card.game.database</code-name-base>
             <suite-component/>
-            <module-dependencies/>
+            <module-dependencies>
+                <dependency>
+                    <code-name-base>dreamer.card.game.library</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <release-version>0-1</release-version>
+                        <specification-version>0</specification-version>
+                    </run-dependency>
+                </dependency>
+                <dependency>
+                    <code-name-base>eclipselink</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <release-version>2</release-version>
+                        <specification-version>3</specification-version>
+                    </run-dependency>
+                </dependency>
+            </module-dependencies>
             <public-packages>
                 <package>com.reflexit.magiccards.core.storage.database</package>
                 <package>com.reflexit.magiccards.core.storage.database.controller</package>
                 <package>com.reflexit.magiccards.core.storage.database.controller.exceptions</package>
             </public-packages>
             <class-path-extension>
-                <runtime-relative-path>ext/Card_Game_Interface_DataBase_Implementation.jar</runtime-relative-path>
-                <binary-origin>release/modules/ext/Card_Game_Interface_DataBase_Implementation.jar</binary-origin>
+                <runtime-relative-path>ext/extension/Card_Game_Interface_DataBase_Implementation.jar</runtime-relative-path>
+                <binary-origin>../../Simple Marauroa Java/Card Game Interface DataBase Implementation/dist/Card_Game_Interface_DataBase_Implementation.jar</binary-origin>
             </class-path-extension>
         </data>
     </configuration>

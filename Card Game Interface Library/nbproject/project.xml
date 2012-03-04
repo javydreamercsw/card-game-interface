@@ -17,14 +17,12 @@
                 </dependency>
             </module-dependencies>
             <public-packages>
-                <package>dreamer.card.game</package>
-                <package>dreamer.card.game.model.events</package>
-                <package>dreamer.card.game.price</package>
-                <package>dreamer.card.game.storage</package>
-                <package>dreamer.card.game.storage.cache</package>
-                <package>dreamer.card.game.storage.database.persistence</package>
-                <package>dreamer.card.game.storage.database.persistence.controller</package>
-                <package>dreamer.card.game.storage.database.persistence.controller.exceptions</package>
+                <package>com.reflexit.magiccards.core</package>
+                <package>com.reflexit.magiccards.core.cache</package>
+                <package>com.reflexit.magiccards.core.model</package>
+                <package>com.reflexit.magiccards.core.model.events</package>
+                <package>com.reflexit.magiccards.core.model.storage</package>
+                <package>com.reflexit.magiccards.core.seller.price</package>
             </public-packages>
             <class-path-extension>
                 <runtime-relative-path>ext/extension/Card_Game_Interface.jar</runtime-relative-path>

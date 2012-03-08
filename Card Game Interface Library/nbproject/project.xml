@@ -22,6 +22,7 @@
                 <package>com.reflexit.magiccards.core.model</package>
                 <package>com.reflexit.magiccards.core.model.events</package>
                 <package>com.reflexit.magiccards.core.model.storage</package>
+                <package>com.reflexit.magiccards.core.model.storage.db</package>
                 <package>com.reflexit.magiccards.core.seller.price</package>
             </public-packages>
             <class-path-extension>

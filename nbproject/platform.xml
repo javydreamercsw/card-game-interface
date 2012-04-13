@@ -62,7 +62,7 @@
             </sequential>
         </for>
         <if>
-            <available dir="../netbeans"/>
+            <available file="../netbeans" type="dir"/>
             <then>
                 <echo>Installing plug-ins from ../netbeans</echo>
                 <mkdir dir="${nbplatform.active.dir}/extra"/>

@@ -3,3 +3,4 @@ build/*
 private/*
 update-center/*
 netbeans_platform/*
+keystore/*

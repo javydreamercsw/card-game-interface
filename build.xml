@@ -21,6 +21,11 @@
         <antcall target="suite.nbms"/>
     </target>
     
+    <target name="build">
+        <antcall target="-updateLibs"/>
+        <antcall target="suite.build"/>
+    </target>
+    
     <target name="-update-keystore-info" depends="-init-netbeans, -init-hudson">
         <for list="${modules}" delimiter=":" param="cur" trim="true">
             <sequential>

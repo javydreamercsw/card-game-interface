@@ -6,10 +6,11 @@
     <property file="nbproject/project.properties"/>
     <property file="nbproject/platform.properties"/>
     <property name="platform.dir" value="../netbeans/"/>
-    <property name="lib.dir" value="${suite.dir}/../Simple Libs/tools"/>
+    <property name="lib.dir" value="${suite.dir}/tools"/>
+    <property name="super.lib.dir" value="${suite.dir}/../Simple Libs/tools"/>
     <!--Check to see if Simple Libs is present to update my libraries-->
     <condition property="simple.libs.exists">
-        <available file="${lib.dir}/.." type="dir"/>
+        <available file="${lib.dir}/" type="dir"/>
     </condition>
     
     <scriptdef name="substring" language="javascript">
@@ -24,6 +25,17 @@
        project.setProperty(attributes.get("property"), text.substring(start, end));
      ]]>
     </scriptdef>
+    
+    <target name="-updateLibs" unless="lib.updated">
+        <echo>Updating libraries</echo>
+        <delete includeemptydirs="true">
+            <fileset dir="${lib.dir}" includes="**/*"/>
+        </delete>
+        <mkdir dir="${lib.dir}"/>
+        <copy todir="${lib.dir}"> 
+            <fileset dir="${super.lib.dir}"/>
+        </copy>
+    </target>
 
     <target name="-check-env" depends="-getAntContribJar">
         <condition property="isNetbeans">
@@ -145,7 +157,7 @@
                             <fail message="Repository @{repo} not supported!"/>
                         </else>
                     </if>
-                        </else>
+                </else>
             </if>   
         </sequential>
     </macrodef>
@@ -166,10 +178,10 @@
         </sequential>
     </macrodef>
     
-    <target name="pmd" if="simple.libs.exists">
+    <target name="pmd" if="simple.libs.exists" depends="-init-hudson, -init-netbeans">
         <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask">
             <classpath>
-                <pathelement location="../../Simple Libs/tools/PMD/pmd-4.3.jar"/>
+                <pathelement location="${lib.dir}/PMD/pmd-4.3.jar"/>
             </classpath>
         </taskdef>
         <mkdir dir="reports/pmd"/>
@@ -183,7 +195,7 @@
         </pmd>
     </target>
     
-    <target name="pmd-all"  description="PMD all sub projects">
+    <target name="pmd-all"  description="PMD all sub projects" depends="-init-hudson, -init-netbeans">
         <iterate target="pmd"/>
     </target>
     

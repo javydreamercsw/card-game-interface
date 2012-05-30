@@ -10,6 +10,10 @@
     <property name="super.lib.dir" value="${suite.dir}/../Simple Libs/tools"/>
     <!--Check to see if Simple Libs is present to update my libraries-->
     <condition property="simple.libs.exists">
+        <available file="${super.lib.dir}/" type="dir"/>
+    </condition>
+    
+    <condition property="libs.exists">
         <available file="${lib.dir}/" type="dir"/>
     </condition>
     
@@ -26,7 +30,7 @@
      ]]>
     </scriptdef>
     
-    <target name="-updateLibs" unless="lib.updated">
+    <target name="-updateLibs" if="simple.libs.exists">
         <echo>Updating libraries</echo>
         <delete includeemptydirs="true">
             <fileset dir="${lib.dir}" includes="**/*"/>
@@ -178,7 +182,7 @@
         </sequential>
     </macrodef>
     
-    <target name="pmd" if="simple.libs.exists" depends="-init-hudson, -init-netbeans">
+    <target name="pmd" if="libs.exists" depends="-init-hudson, -init-netbeans">
         <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask">
             <classpath>
                 <pathelement location="${lib.dir}/PMD/pmd-4.3.jar"/>

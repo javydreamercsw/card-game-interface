@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+<!-- for some information on what you could do (e.g. targets to override). -->
+<!-- If you delete this file and reopen the project it will be recreated. -->
+<project name="Card Game Interface" basedir=".">
+    <description>Builds the module suite Card Game Interface.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <import file="preparation.xml"/>
+    <property file="nbproject/project.properties"/>
+    
+    <target name="nbms" depends="-init-netbeans,-init-hudson">
+        <!--Update keystore info in projects-->
+        <antcall target="-update-keystore-info"/>
+        <!--Create/Update keystore-->
+        <delete file="${keystore.location}${keystore.name}"/>
+        <mkdir dir="${keystore.location}"/>
+        <genkey alias="${keystore.alias}" storepass="${keystore.password}"
+                dname="${keystore.dname}"
+                keystore="${keystore.location}${keystore.name}"/> 
+        <!--Generate nbms and javadoc for applicable projects-->
+        <antcall target="suite.nbms"/>
+    </target>
+    
+    <target name="build">
+        <antcall target="suite.build"/>
+    </target>
+    
+    <target name="-update-keystore-info" depends="-init-netbeans, -init-hudson">
+        <for list="${modules}" delimiter=":" param="cur" trim="true">
+            <sequential>
+                <echo>Updating module: @{cur}...</echo>
+                <mkdir dir="@{cur}/nbproject/"/>
+                <!--Place the information in the properties file-->
+                <propertyfile file="@{cur}/nbproject/project.properties">
+                    <entry  key="keystore" value="../${keystore.location}${keystore.name}"/>
+                    <entry  key="nbm_alias" value="${keystore.alias}"/>
+                </propertyfile>
+                <mkdir dir="@{cur}/nbproject/private/"/>
+                <!--Place the password in the private properties file-->
+                <propertyfile file="@{cur}/nbproject/private/private.properties">
+                    <entry  key="storepass" value="${keystore.password}"/>
+                </propertyfile>
+                <echo>Done!</echo>
+            </sequential>
+        </for>
+    </target>
+</project>

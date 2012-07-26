@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
+            <code-name-base>dreamer.card.game.library</code-name-base>
+            <suite-component/>
+            <module-dependencies>
+                <dependency>
+                    <code-name-base>eclipselink</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <release-version>2</release-version>
+                        <specification-version>3</specification-version>
+                    </run-dependency>
+                </dependency>
+                <dependency>
+                    <code-name-base>org.h2</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <release-version>1</release-version>
+                        <specification-version>3</specification-version>
+                    </run-dependency>
+                </dependency>
+            </module-dependencies>
+            <public-packages>
+                <package>com.reflexit.magiccards.core</package>
+                <package>com.reflexit.magiccards.core.cache</package>
+                <package>com.reflexit.magiccards.core.model</package>
+                <package>com.reflexit.magiccards.core.model.events</package>
+                <package>com.reflexit.magiccards.core.model.storage</package>
+                <package>com.reflexit.magiccards.core.model.storage.db</package>
+                <package>com.reflexit.magiccards.core.seller.price</package>
+            </public-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/extension/Card_Game_Interface.jar</runtime-relative-path>
+                <binary-origin>../../Simple Marauroa Java/Card Game Interface/dist/Card_Game_Interface.jar</binary-origin>
+            </class-path-extension>
+        </data>
+    </configuration>
+</project>

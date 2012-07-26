@@ -30,7 +30,7 @@
      ]]>
     </scriptdef>
     
-    <target name="-updateLibs" if="simple.libs.exists">
+    <target name="updateLibs" if="simple.libs.exists">
         <echo>Updating libraries</echo>
         <delete includeemptydirs="true">
             <fileset dir="${lib.dir}" includes="**/*"/>

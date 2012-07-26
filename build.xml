@@ -22,7 +22,6 @@
     </target>
     
     <target name="build">
-        <antcall target="-updateLibs"/>
         <antcall target="suite.build"/>
     </target>
     

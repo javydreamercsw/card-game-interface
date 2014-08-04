@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-OpenIDE-Module: dreamer.card.game.database/0
-OpenIDE-Module-Implementation-Version: 1
-OpenIDE-Module-Localizing-Bundle: dreamer/card/game/database/Bundle.properties
-

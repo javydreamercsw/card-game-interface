@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Localizing-Bundle: net/sourceforge/javydreamercsw/data/
+ base/implementation/library/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.1
+OpenIDE-Module-Implementation-Version: 1.1-20140804
+OpenIDE-Module-Build-Version: 201408041949
+OpenIDE-Module: net.sourceforge.javydreamercsw.Data.Base.Implementatio
+ n.Library
+OpenIDE-Module-Public-Packages: -
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+OpenIDE-Module-Display-Category: net.sourceforge.javydreamercsw
+OpenIDE-Module-Name: Database Implementation Library
+OpenIDE-Module-Short-Description: <undefined>
+OpenIDE-Module-Long-Description: <undefined>
+OpenIDE-Module-Module-Dependencies: org.netbeans.api.annotations.commo
+ n/1 > 1.23.1, net.sourceforge.javydreamercsw.Card.Game.Interface.Libr
+ ary > 1.1
+

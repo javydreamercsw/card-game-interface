@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="net.sourceforge.javydreamercsw.Card.Game.branding">
+    <module_version install_time="1407181787614" last="true" origin="installer" specification_version="1.1">
+        <file crc="3066834088" name="config/Modules/net-sourceforge-javydreamercsw-Branding.xml"/>
+        <file crc="2382629357" name="config/Modules/net-sourceforge-javydreamercsw-Card-Game-branding.xml"/>
+        <file crc="1708508898" name="core/locale/core_cardgame.jar"/>
+        <file crc="1351463442" name="modules/locale/org-netbeans-core-windows_cardgame.jar"/>
+        <file crc="3253941626" name="modules/locale/org-netbeans-core_cardgame.jar"/>
+        <file crc="3157129549" name="modules/net-sourceforge-javydreamercsw-Branding.jar"/>
+        <file crc="2962138054" name="modules/net-sourceforge-javydreamercsw-Card-Game-branding.jar"/>
+        <file crc="2332889698" name="update_tracking/net-sourceforge-javydreamercsw-Branding.xml"/>
+        <file crc="544170429" name="update_tracking/net-sourceforge-javydreamercsw-Card-Game-branding.xml"/>
+    </module_version>
+</module>

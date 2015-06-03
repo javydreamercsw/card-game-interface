@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><module codename="net.sourceforge.javydreamercsw.Data.Base.Implementation.Library">
-    <module_version install_time="1407181782973" last="true" origin="installer" specification_version="1.1">
-        <file crc="2491957509" name="config/Modules/net-sourceforge-javydreamercsw-Data-Base-Implementation-Library.xml"/>
-        <file crc="29093555" name="modules/net-sourceforge-javydreamercsw-Data-Base-Implementation-Library.jar"/>
-        <file crc="3959918241" name="update_tracking/net-sourceforge-javydreamercsw-Data-Base-Implementation-Library.xml"/>
-    </module_version>
-</module>

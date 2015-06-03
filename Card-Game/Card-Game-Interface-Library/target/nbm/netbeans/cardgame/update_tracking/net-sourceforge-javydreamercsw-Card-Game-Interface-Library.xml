@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><module codename="net.sourceforge.javydreamercsw.Card.Game.Interface.Library">
-    <module_version install_time="1407181780274" last="true" origin="installer" specification_version="1.1">
-        <file crc="1037486883" name="config/Modules/net-sourceforge-javydreamercsw-Card-Game-Interface-Library.xml"/>
-        <file crc="3914643597" name="modules/ext/net.sourceforge.javydreamercsw.Card-Game-Interface-Library/net-sourceforge-javydreamercsw/Card-Game-Interface.jar"/>
-        <file crc="3449484423" name="modules/net-sourceforge-javydreamercsw-Card-Game-Interface-Library.jar"/>
-        <file crc="2329375521" name="update_tracking/net-sourceforge-javydreamercsw-Card-Game-Interface-Library.xml"/>
-    </module_version>
-</module>

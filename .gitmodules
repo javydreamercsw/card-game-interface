@@ -1,0 +1,3 @@
+[submodule "simple-marauroa"]
+	path = simple-marauroa
+	url = git@github.com:javydreamercsw/simple-marauroa.git

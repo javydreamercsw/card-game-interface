@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Localizing-Bundle: net/sourceforge/javydreamercsw/card/
+ game/branding/Bundle.properties
+AutoUpdate-Essential-Module: true
+OpenIDE-Module-Specification-Version: 1.1
+OpenIDE-Module-Implementation-Version: 1.1-20180606
+OpenIDE-Module-Build-Version: 201806061953
+OpenIDE-Module: net.sourceforge.javydreamercsw.Card.Game.branding
+OpenIDE-Module-Public-Packages: -
+OpenIDE-Module-Requires: org.openide.modules.ModuleFormat1
+OpenIDE-Module-Display-Category: net.sourceforge.javydreamercsw
+OpenIDE-Module-Name: Branding
+OpenIDE-Module-Short-Description: <undefined>
+OpenIDE-Module-Long-Description: <undefined>
+

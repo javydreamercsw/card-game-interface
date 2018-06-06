@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="net.sourceforge.javydreamercsw.Card.Game.Interface.Library">
+    <module_version install_time="1528314798653" last="true" origin="installer" specification_version="1.1">
+        <file crc="1830316881" name="config/Modules/net-sourceforge-javydreamercsw-Card-Game-Interface-Library.xml"/>
+        <file crc="1260452356" name="modules/ext/net.sourceforge.javydreamercsw.Card-Game-Interface-Library/commons-io/commons-io.jar"/>
+        <file crc="3009198276" name="modules/ext/net.sourceforge.javydreamercsw.Card-Game-Interface-Library/javax-validation/validation-api.jar"/>
+        <file crc="3973507997" name="modules/ext/net.sourceforge.javydreamercsw.Card-Game-Interface-Library/net-sourceforge-javydreamercsw/Card-Game-Interface.jar"/>
+        <file crc="1059594920" name="modules/ext/net.sourceforge.javydreamercsw.Card-Game-Interface-Library/org-eclipse-persistence/commonj.sdo.jar"/>
+        <file crc="1185769836" name="modules/ext/net.sourceforge.javydreamercsw.Card-Game-Interface-Library/org-eclipse-persistence/eclipselink.jar"/>
+        <file crc="2751838100" name="modules/ext/net.sourceforge.javydreamercsw.Card-Game-Interface-Library/org-eclipse-persistence/javax.persistence.jar"/>
+        <file crc="2238533751" name="modules/ext/net.sourceforge.javydreamercsw.Card-Game-Interface-Library/org-glassfish/javax.json.jar"/>
+        <file crc="2673842087" name="modules/net-sourceforge-javydreamercsw-Card-Game-Interface-Library.jar"/>
+    </module_version>
+</module>
